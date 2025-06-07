@@ -6,52 +6,72 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		984EDE682DF04F260023A51F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 984EDE672DF04F260023A51F /* README.md */; };
+		984EDE6C2DF123E00023A51F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 984EDE6B2DF123E00023A51F /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		981DE1C72DC31F3700C14DA5 /* iCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		981DE1D92DC3208E00C14DA5 /* DocumentSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		986E4D692DE99BD30015A471 /* SwiftDataSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		984EDCE52DEBC4120023A51F /* ContentCollaboration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentCollaboration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		984EDE672DF04F260023A51F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		984EDE6B2DF123E00023A51F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		986E4D692DE99BD30015A471 /* SwiftDataSyncAuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSyncAuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		984EDCE02DEA8C430023A51F /* Exceptions for "SwiftDataSync" folder in "SwiftDataSync" target */ = {
+		984EDCE02DEA8C430023A51F /* Exceptions for "SwiftDataSyncAuto" folder in "SwiftDataSyncAuto" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 986E4D682DE99BD30015A471 /* SwiftDataSync */;
+			target = 986E4D682DE99BD30015A471 /* SwiftDataSyncAuto */;
+		};
+		984EDD672DEBEE630023A51F /* Exceptions for "ContentCollaboration" folder in "ContentCollaboration" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 984EDCE42DEBC4120023A51F /* ContentCollaboration */;
+		};
+		984EDE6A2DF121310023A51F /* Exceptions for "ReadmeAssets" folder in "ContentCollaboration" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				contentCollaborationDemo.gif,
+				swiftDataSyncAutoDemo.png,
+			);
+			target = 984EDCE42DEBC4120023A51F /* ContentCollaboration */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		981DE1C92DC31F3700C14DA5 /* iCloudDemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = iCloudDemo;
-			sourceTree = "<group>";
-		};
-		981DE1DA2DC3208E00C14DA5 /* DocumentSync */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DocumentSync;
-			sourceTree = "<group>";
-		};
-		986E4D6A2DE99BD30015A471 /* SwiftDataSync */ = {
+		984EDCE62DEBC4120023A51F /* ContentCollaboration */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				984EDCE02DEA8C430023A51F /* Exceptions for "SwiftDataSync" folder in "SwiftDataSync" target */,
+				984EDD672DEBEE630023A51F /* Exceptions for "ContentCollaboration" folder in "ContentCollaboration" target */,
 			);
-			path = SwiftDataSync;
+			path = ContentCollaboration;
+			sourceTree = "<group>";
+		};
+		984EDE662DF04F1B0023A51F /* ReadmeAssets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				984EDE6A2DF121310023A51F /* Exceptions for "ReadmeAssets" folder in "ContentCollaboration" target */,
+			);
+			path = ReadmeAssets;
+			sourceTree = "<group>";
+		};
+		986E4D6A2DE99BD30015A471 /* SwiftDataSyncAuto */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				984EDCE02DEA8C430023A51F /* Exceptions for "SwiftDataSyncAuto" folder in "SwiftDataSyncAuto" target */,
+			);
+			path = SwiftDataSyncAuto;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		981DE1C42DC31F3700C14DA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		981DE1D62DC3208E00C14DA5 /* Frameworks */ = {
+		984EDCE22DEBC4120023A51F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,9 +91,11 @@
 		981DE1BE2DC31F3700C14DA5 = {
 			isa = PBXGroup;
 			children = (
-				981DE1C92DC31F3700C14DA5 /* iCloudDemo */,
-				981DE1DA2DC3208E00C14DA5 /* DocumentSync */,
-				986E4D6A2DE99BD30015A471 /* SwiftDataSync */,
+				984EDE6B2DF123E00023A51F /* .gitignore */,
+				984EDE672DF04F260023A51F /* README.md */,
+				984EDE662DF04F1B0023A51F /* ReadmeAssets */,
+				986E4D6A2DE99BD30015A471 /* SwiftDataSyncAuto */,
+				984EDCE62DEBC4120023A51F /* ContentCollaboration */,
 				981DE1C82DC31F3700C14DA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,9 +103,8 @@
 		981DE1C82DC31F3700C14DA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				981DE1C72DC31F3700C14DA5 /* iCloudDemo.app */,
-				981DE1D92DC3208E00C14DA5 /* DocumentSync.app */,
-				986E4D692DE99BD30015A471 /* SwiftDataSync.app */,
+				986E4D692DE99BD30015A471 /* SwiftDataSyncAuto.app */,
+				984EDCE52DEBC4120023A51F /* ContentCollaboration.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,53 +112,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		981DE1C62DC31F3700C14DA5 /* iCloudDemo */ = {
+		984EDCE42DEBC4120023A51F /* ContentCollaboration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 981DE1D22DC31F3800C14DA5 /* Build configuration list for PBXNativeTarget "iCloudDemo" */;
+			buildConfigurationList = 984EDCED2DEBC4130023A51F /* Build configuration list for PBXNativeTarget "ContentCollaboration" */;
 			buildPhases = (
-				981DE1C32DC31F3700C14DA5 /* Sources */,
-				981DE1C42DC31F3700C14DA5 /* Frameworks */,
-				981DE1C52DC31F3700C14DA5 /* Resources */,
+				984EDCE12DEBC4120023A51F /* Sources */,
+				984EDCE22DEBC4120023A51F /* Frameworks */,
+				984EDCE32DEBC4120023A51F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				981DE1C92DC31F3700C14DA5 /* iCloudDemo */,
+				984EDCE62DEBC4120023A51F /* ContentCollaboration */,
+				984EDE662DF04F1B0023A51F /* ReadmeAssets */,
 			);
-			name = iCloudDemo;
+			name = ContentCollaboration;
 			packageProductDependencies = (
 			);
-			productName = iCloudDemo;
-			productReference = 981DE1C72DC31F3700C14DA5 /* iCloudDemo.app */;
+			productName = ContentCollaboration;
+			productReference = 984EDCE52DEBC4120023A51F /* ContentCollaboration.app */;
 			productType = "com.apple.product-type.application";
 		};
-		981DE1D82DC3208E00C14DA5 /* DocumentSync */ = {
+		986E4D682DE99BD30015A471 /* SwiftDataSyncAuto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 981DE1E12DC3208F00C14DA5 /* Build configuration list for PBXNativeTarget "DocumentSync" */;
-			buildPhases = (
-				981DE1D52DC3208E00C14DA5 /* Sources */,
-				981DE1D62DC3208E00C14DA5 /* Frameworks */,
-				981DE1D72DC3208E00C14DA5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				981DE1DA2DC3208E00C14DA5 /* DocumentSync */,
-			);
-			name = DocumentSync;
-			packageProductDependencies = (
-			);
-			productName = DocumentSync;
-			productReference = 981DE1D92DC3208E00C14DA5 /* DocumentSync.app */;
-			productType = "com.apple.product-type.application";
-		};
-		986E4D682DE99BD30015A471 /* SwiftDataSync */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 986E4D732DE99BD40015A471 /* Build configuration list for PBXNativeTarget "SwiftDataSync" */;
+			buildConfigurationList = 986E4D732DE99BD40015A471 /* Build configuration list for PBXNativeTarget "SwiftDataSyncAuto" */;
 			buildPhases = (
 				986E4D652DE99BD30015A471 /* Sources */,
 				986E4D662DE99BD30015A471 /* Frameworks */,
@@ -148,13 +148,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				986E4D6A2DE99BD30015A471 /* SwiftDataSync */,
+				986E4D6A2DE99BD30015A471 /* SwiftDataSyncAuto */,
 			);
-			name = SwiftDataSync;
+			name = SwiftDataSyncAuto;
 			packageProductDependencies = (
 			);
 			productName = SwiftDataSync;
-			productReference = 986E4D692DE99BD30015A471 /* SwiftDataSync.app */;
+			productReference = 986E4D692DE99BD30015A471 /* SwiftDataSyncAuto.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,10 +167,7 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					981DE1C62DC31F3700C14DA5 = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					981DE1D82DC3208E00C14DA5 = {
+					984EDCE42DEBC4120023A51F = {
 						CreatedOnToolsVersion = 16.3;
 					};
 					986E4D682DE99BD30015A471 = {
@@ -192,25 +189,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				981DE1C62DC31F3700C14DA5 /* iCloudDemo */,
-				981DE1D82DC3208E00C14DA5 /* DocumentSync */,
-				986E4D682DE99BD30015A471 /* SwiftDataSync */,
+				986E4D682DE99BD30015A471 /* SwiftDataSyncAuto */,
+				984EDCE42DEBC4120023A51F /* ContentCollaboration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		981DE1C52DC31F3700C14DA5 /* Resources */ = {
+		984EDCE32DEBC4120023A51F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		981DE1D72DC3208E00C14DA5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				984EDE682DF04F260023A51F /* README.md in Resources */,
+				984EDE6C2DF123E00023A51F /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,14 +215,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		981DE1C32DC31F3700C14DA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		981DE1D52DC3208E00C14DA5 /* Sources */ = {
+		984EDCE12DEBC4120023A51F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,15 +351,18 @@
 			};
 			name = Release;
 		};
-		981DE1D32DC31F3800C14DA5 /* Debug */ = {
+		984EDCEE2DEBC4130023A51F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ContentCollaboration/ContentCollaboration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentCollaboration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -386,7 +373,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.iCloudDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.ContentCollaboration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -394,15 +381,18 @@
 			};
 			name = Debug;
 		};
-		981DE1D42DC31F3800C14DA5 /* Release */ = {
+		984EDCEF2DEBC4130023A51F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ContentCollaboration/ContentCollaboration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContentCollaboration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -413,65 +403,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.iCloudDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		981DE1E22DC3208F00C14DA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DocumentSync/DocumentSync.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.DocumentSync;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		981DE1E32DC3208F00C14DA5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DocumentSync/DocumentSync.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.DocumentSync;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.ContentCollaboration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -484,14 +416,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SwiftDataSync/SwiftDataSync.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftDataSyncAuto/SwiftDataSyncAuto.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftDataSync/Info.plist;
+				INFOPLIST_FILE = SwiftDataSyncAuto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -516,14 +448,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SwiftDataSync/SwiftDataSync.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftDataSyncAuto/SwiftDataSyncAuto.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftDataSync/Info.plist;
+				INFOPLIST_FILE = SwiftDataSyncAuto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -555,25 +487,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		981DE1D22DC31F3800C14DA5 /* Build configuration list for PBXNativeTarget "iCloudDemo" */ = {
+		984EDCED2DEBC4130023A51F /* Build configuration list for PBXNativeTarget "ContentCollaboration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				981DE1D32DC31F3800C14DA5 /* Debug */,
-				981DE1D42DC31F3800C14DA5 /* Release */,
+				984EDCEE2DEBC4130023A51F /* Debug */,
+				984EDCEF2DEBC4130023A51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		981DE1E12DC3208F00C14DA5 /* Build configuration list for PBXNativeTarget "DocumentSync" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				981DE1E22DC3208F00C14DA5 /* Debug */,
-				981DE1E32DC3208F00C14DA5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		986E4D732DE99BD40015A471 /* Build configuration list for PBXNativeTarget "SwiftDataSync" */ = {
+		986E4D732DE99BD40015A471 /* Build configuration list for PBXNativeTarget "SwiftDataSyncAuto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				986E4D712DE99BD40015A471 /* Debug */,
