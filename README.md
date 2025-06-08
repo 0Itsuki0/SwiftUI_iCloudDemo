@@ -28,7 +28,7 @@ To test it, run the app on couple real devices signed into different iCloud acco
 - Notifications for subscriptions are not received correctly on simulators.
 
 
-For more details, please refer to my blog: [SwiftUI: Content Collaboration with iCloud]()
+For more details, please refer to my blog: [SwiftUI: Content Collaboration with iCloud](https://medium.com/@itsuki.enjoy/swiftui-a-simple-simultaneous-content-collaboration-app-with-icloud-b50802aa4007)
 
 ![](./ReadmeAssets/contentCollaborationDemo.gif)
 
@@ -45,10 +45,9 @@ To set up the demo, please refer to the [Common Configuration](#common-configura
 To test it, run the app on multiple simulators that are signed into the same iCloud account. 
 
 
-For more details, please refer to my blog: [SwiftData: Synchronize Model Data with iCloud (Automatic)]()
+For more details, please refer to my blog: [SwiftData: Synchronize Model Data with iCloud (Automatic)](https://medium.com/@itsuki.enjoy/swiftdata-synchronize-model-data-with-icloud-automatic-with-modelcontainer-e37bce84024c)
 
 ![](./ReadmeAssets/swiftDataSyncAutoDemo.png)
-
 
 
 
