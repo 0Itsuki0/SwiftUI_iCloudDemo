@@ -8,17 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var documentManager = DocumentManager()    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+        NavigationStack {
+            Group {
+                if documentManager.ubiquityIdentityToken == nil {
+                    ContentUnavailableView(label: {
+                        Label("iCloud Not Available", systemImage: "questionmark.app")
+                    }, description: {
+                        Text("Please Sign in to your iCloud account!")
+                            .multilineTextAlignment(.center)
+                    }, actions: {
+                        if let settingURL = URL(string: UIApplication.openSettingsURLString) {
+                            Button(action: {
+                                UIApplication.shared.open(settingURL)
+                            }, label: {
+                                Text("Settings")
+                            })
+                        }
+                    })
+                } else {
+                    DocumentListView()
+                        .environment(documentManager)
+                }
+            }
+            .alert("Oops!", isPresented: $documentManager.showError, actions: {
+                Button(action: {
+                    documentManager.showError = false
+                }, label: {
+                    Text("OK")
+                })
+            }, message: {
+                Text(documentManager.error?.message ?? "Unknown Error")
+            })
+            .disabled(documentManager.processing != nil)
+            .overlay(content: {
+                if documentManager.processing != nil {
+                    ProgressView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(.gray.opacity(0.3))
+                }
+            })
 
-#Preview {
-    ContentView()
+        }
+    }
 }

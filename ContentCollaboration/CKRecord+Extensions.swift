@@ -11,11 +11,11 @@ import CloudKit
 
 extension CKRecord {
     var title: String {
-        self.value(forKey: CloudManager.titleKey) as? String ?? "(Untitled)"
+        self.value(forKey: Constants.titleKey) as? String ?? "(Untitled)"
     }
     
     var content: String {
-        self.value(forKey: CloudManager.contentKey) as? String ?? "(Untitled)"
+        self.value(forKey: Constants.contentKey) as? String ?? "(Untitled)"
     }
     
     var isOwner: Bool {

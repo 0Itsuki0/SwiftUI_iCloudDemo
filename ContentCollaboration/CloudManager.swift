@@ -8,11 +8,13 @@
 import SwiftUI
 import CloudKit
 
-// MARK: static variables
-extension CloudManager {
-    
+public final class Constants {
     static let titleKey: String = "title"
     static let contentKey: String = "content"
+}
+
+// MARK: static variables
+extension CloudManager {
     
     // this option is not the initial option that shows up, but whether if the user can configure the options
     // The share sheet uses the registered CKAllowedSharingOptions object to let the user choose between the allowed options when sharing
@@ -50,10 +52,8 @@ extension Error {
 }
 
 
-
-
-
 @Observable
+@MainActor
 class CloudManager {
     static let shared: CloudManager = .init()
     
@@ -377,8 +377,8 @@ class CloudManager {
         let record: CKRecord = .init(recordType: CloudManager.recordType, recordID: .init(zoneID: zone.zoneID))
         
         record.setValuesForKeys([
-            CloudManager.titleKey: "(Untitled)",
-            CloudManager.contentKey: ""
+            Constants.titleKey: "(Untitled)",
+            Constants.contentKey: ""
         ])
         
         let savedRecord = try await self.privateDatabase.save(record)
@@ -405,8 +405,8 @@ class CloudManager {
         }
         
         record.setValuesForKeys([
-            CloudManager.titleKey: self.title,
-            CloudManager.contentKey: self.content
+            Constants.titleKey: self.title,
+            Constants.contentKey: self.content
         ])
         
         let database = record.isOwner ? self.privateDatabase : self.sharedCloudDatabase
@@ -632,18 +632,19 @@ extension CloudManager {
 
 // MARK: Sharing related
 extension CloudManager {
-    struct SharedNoteTransferable: Transferable {
+    struct SharedNoteTransferable: Transferable, Sendable {
         var share: CKShare?
-        var createCKShare: () async throws -> CKShare
+        var createCKShare: @Sendable () async throws -> CKShare
         var container: CKContainer
+        var sharingOption: CKAllowedSharingOptions
         
 
         static var transferRepresentation: some TransferRepresentation {
             CKShareTransferRepresentation { note in
                 if let share = note.share {
-                    return .existing(share, container: note.container, allowedSharingOptions: CloudManager.sharingOption)
+                    return .existing(share, container: note.container, allowedSharingOptions: note.sharingOption)
                 } else {
-                    return .prepareShare(container: note.container, allowedSharingOptions: CloudManager.sharingOption) {
+                    return .prepareShare(container: note.container, allowedSharingOptions: note.sharingOption) {
                         return try await note.createCKShare()
                     }
                 }
@@ -655,11 +656,13 @@ extension CloudManager {
         return SharedNoteTransferable(
             share: self.share,
             createCKShare: self.getCKShare,
-            container: self.container
+            container: self.container,
+            sharingOption: CloudManager.sharingOption
         )
     }
     
     // create root CKRecord & CKShare in the shared zone
+    @Sendable
     private func getCKShare() async throws -> CKShare {
         if let share = self.share { return share }
         
@@ -717,6 +720,7 @@ extension CloudManager {
 //                if id == record.recordID {
 //                    self.displayRecord = record
 //                }
+                
             case .failure(let error):
                 print("Failed to save record: \(error)")
                 throw error

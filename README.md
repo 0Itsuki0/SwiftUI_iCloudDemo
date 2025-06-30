@@ -51,6 +51,20 @@ For more details, please refer to my blog: [SwiftData: Synchronize Model Data wi
 
 
 
+## Sync Files 
+A simple app that synchronize files (text documents) using iCloud Document.
+
+Specifically, it uses `NSMetadataQuery` to discover documents stored in an iCloud Container and watch for changes.
+
+To set up the demo, please refer to the [Common Configuration](#common-configuration) section.
+
+To test it, run the app on multiple devices (preferably real devices instead of simulators) that are signed into the same iCloud account. 
+
+For more details, please refer to my blog: [SwiftUI: Synchronize/Store Files (Documents) with iCloud]()
+
+![](./ReadmeAssets/iCloudDocumentDemo.png)
+
+
 
 ## Common Configuration
 
