@@ -3,6 +3,8 @@
 This repository includes the following demo.
 - [Content Collaboration with CloudKit](#content-collaboration)
 - [Synchronous Swift Data Automatically with ModelContainer](#sync-swift-data-automatic)
+- [Sync Files](#sync-files)
+- [Sync Key-value pairs](#sync-key-value)
 
 
 ## Content Collaboration
@@ -65,6 +67,18 @@ For more details, please refer to my blog: [SwiftUI: Synchronize/Store Files (Do
 ![](./ReadmeAssets/iCloudDocumentDemo.png)
 
 
+## Sync Key-Value 
+A simple app that synchronize key-value pairs such as user's preference using iCloud key-value storage.
+
+To set up the demo, please refer to the [Common Configuration](#common-configuration) section.
+
+To test it, run the app on multiple devices (preferably real devices instead of simulators) that are signed into the same iCloud account. 
+
+For more details, please refer to my blog: [SwiftUI: Sync User Preferences with iCloud Key-Value Storage]()
+
+![](./ReadmeAssets/keyValueSyncDemo.png)
+
+
 
 ## Common Configuration
 
@@ -72,4 +86,4 @@ Before running the demo, perform the following steps.
 - In the General pane, select the target interested, update the Bundle Identifier field with a new identifier.
 - select the applicable team from the Team drop-down menu
 - Make sure the iCloud capability is present and the CloudKit option is in a selected state.
-- Select an existing iCloud container or create a new one.
+- For content collaboration or swift data syncing, select an existing iCloud container or create a new one.

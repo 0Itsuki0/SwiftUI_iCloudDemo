@@ -17,6 +17,7 @@
 		984EDE6B2DF123E00023A51F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		984EDEF92DF512520023A51F /* iCloudDocumentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloudDocumentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986E4D692DE99BD30015A471 /* SwiftDataSyncAuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSyncAuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E358A82E1228EF0022C832 /* KeyValueStorageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyValueStorageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -39,6 +40,7 @@
 			membershipExceptions = (
 				contentCollaborationDemo.gif,
 				iCloudDocumentDemo.png,
+				keyValueSyncDemo.png,
 				swiftDataSyncAutoDemo.png,
 			);
 			target = 984EDCE42DEBC4120023A51F /* ContentCollaboration */;
@@ -75,6 +77,11 @@
 			path = SwiftDataSyncAuto;
 			sourceTree = "<group>";
 		};
+		98E358A92E1228EF0022C832 /* KeyValueStorageDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeyValueStorageDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98E358A52E1228EF0022C832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +125,7 @@
 				986E4D6A2DE99BD30015A471 /* SwiftDataSyncAuto */,
 				984EDCE62DEBC4120023A51F /* ContentCollaboration */,
 				984EDEFA2DF512520023A51F /* iCloudDocumentDemo */,
+				98E358A92E1228EF0022C832 /* KeyValueStorageDemo */,
 				981DE1C82DC31F3700C14DA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +136,7 @@
 				986E4D692DE99BD30015A471 /* SwiftDataSyncAuto.app */,
 				984EDCE52DEBC4120023A51F /* ContentCollaboration.app */,
 				984EDEF92DF512520023A51F /* iCloudDocumentDemo.app */,
+				98E358A82E1228EF0022C832 /* KeyValueStorageDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +211,28 @@
 			productReference = 986E4D692DE99BD30015A471 /* SwiftDataSyncAuto.app */;
 			productType = "com.apple.product-type.application";
 		};
+		98E358A72E1228EF0022C832 /* KeyValueStorageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98E358B22E1228F00022C832 /* Build configuration list for PBXNativeTarget "KeyValueStorageDemo" */;
+			buildPhases = (
+				98E358A42E1228EF0022C832 /* Sources */,
+				98E358A52E1228EF0022C832 /* Frameworks */,
+				98E358A62E1228EF0022C832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				98E358A92E1228EF0022C832 /* KeyValueStorageDemo */,
+			);
+			name = KeyValueStorageDemo;
+			packageProductDependencies = (
+			);
+			productName = KeyValueStorageDemo;
+			productReference = 98E358A82E1228EF0022C832 /* KeyValueStorageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,8 +240,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					984EDCE42DEBC4120023A51F = {
 						CreatedOnToolsVersion = 16.3;
@@ -213,6 +251,9 @@
 					};
 					986E4D682DE99BD30015A471 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					98E358A72E1228EF0022C832 = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
@@ -233,6 +274,7 @@
 				986E4D682DE99BD30015A471 /* SwiftDataSyncAuto */,
 				984EDCE42DEBC4120023A51F /* ContentCollaboration */,
 				984EDEF82DF512520023A51F /* iCloudDocumentDemo */,
+				98E358A72E1228EF0022C832 /* KeyValueStorageDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +303,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98E358A62E1228EF0022C832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -279,6 +328,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		986E4D652DE99BD30015A471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E358A42E1228EF0022C832 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,6 +379,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -346,6 +403,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -386,6 +444,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -402,6 +461,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -415,7 +475,6 @@
 				CODE_SIGN_ENTITLEMENTS = ContentCollaboration/ContentCollaboration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ContentCollaboration/Info.plist;
@@ -445,7 +504,6 @@
 				CODE_SIGN_ENTITLEMENTS = ContentCollaboration/ContentCollaboration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ContentCollaboration/Info.plist;
@@ -475,7 +533,6 @@
 				CODE_SIGN_ENTITLEMENTS = iCloudDocumentDemo/iCloudDocumentDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -504,7 +561,6 @@
 				CODE_SIGN_ENTITLEMENTS = iCloudDocumentDemo/iCloudDocumentDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -534,7 +590,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftDataSyncAuto/Info.plist;
@@ -566,7 +621,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftDataSyncAuto/Info.plist;
@@ -585,6 +639,70 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98E358B02E1228F00022C832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeyValueStorageDemo/KeyValueStorageDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.KeyValueStorageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98E358B12E1228F00022C832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeyValueStorageDemo/KeyValueStorageDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.KeyValueStorageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -624,6 +742,15 @@
 			buildConfigurations = (
 				986E4D712DE99BD40015A471 /* Debug */,
 				986E4D722DE99BD40015A471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98E358B22E1228F00022C832 /* Build configuration list for PBXNativeTarget "KeyValueStorageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E358B02E1228F00022C832 /* Debug */,
+				98E358B12E1228F00022C832 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
