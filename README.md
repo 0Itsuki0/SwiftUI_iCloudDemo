@@ -62,7 +62,7 @@ To set up the demo, please refer to the [Common Configuration](#common-configura
 
 To test it, run the app on multiple devices (preferably real devices instead of simulators) that are signed into the same iCloud account. 
 
-For more details, please refer to my blog: [SwiftUI: Synchronize/Store Files (Documents) with iCloud]()
+For more details, please refer to my blog: [SwiftUI: Synchronize/Store Files (Documents) with iCloud](https://medium.com/gitconnected/swiftui-synchronize-store-files-documents-with-icloud-89b482361148)
 
 ![](./ReadmeAssets/iCloudDocumentDemo.png)
 
@@ -74,7 +74,7 @@ To set up the demo, please refer to the [Common Configuration](#common-configura
 
 To test it, run the app on multiple devices (preferably real devices instead of simulators) that are signed into the same iCloud account. 
 
-For more details, please refer to my blog: [SwiftUI: Sync User Preferences with iCloud Key-Value Storage]()
+For more details, please refer to my blog: [SwiftUI: Sync User Preferences with iCloud Key-Value Storage](https://medium.com/@itsuki.enjoy/swiftui-sync-user-preferences-with-icloud-key-value-storage-252d155c8a1b)
 
 ![](./ReadmeAssets/keyValueSyncDemo.png)
 
